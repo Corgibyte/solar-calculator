@@ -20,11 +20,12 @@ export class Age {
   }
 
   mercurialYearsLeft(earthLifeExp) {
-    return 1;
+    const ageToConvert = Math.abs(earthLifeExp - this.earthAge);
+    return ageToConvert / 0.24;
   }
 
   venusianYearsLeft(earthLifeExp) {
-    return 1;
+    return 0.1;
   }
 
   martianYearsLeft(earthLifeExp) {
