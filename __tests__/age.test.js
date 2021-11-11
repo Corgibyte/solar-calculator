@@ -56,6 +56,14 @@ describe('Age', () => {
     expect(testAge2.mercurialYearsLeft(7)).toBeCloseTo(12.5);
   });
 
+  test('should get correct Earth years left if younger than life exp', () => {
+    expect(testAge1.earthYearsLeft(3)).toBeCloseTo(2);
+  });
+
+  test('should get correct Earth years past LE if older than LE', () => {
+    expect(testAge2.earthYearsLeft(7)).toBeCloseTo(3);
+  });
+
   test('should get correct Venusian years left if younger than life exp', () => {
     expect(testAge1.venusianYearsLeft(3)).toBeCloseTo(3.226);
   });

@@ -20,6 +20,10 @@ export class Age {
     return this.earthAge / 11.86;
   }
 
+  earthYearsLeft(earthLifeExp) {
+    return earthLifeExp * 100;
+  }
+
   mercurialYearsLeft(earthLifeExp) {
     const ageToConvert = Math.abs(earthLifeExp - this.earthAge);
     return ageToConvert / 0.24;
