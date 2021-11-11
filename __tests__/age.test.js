@@ -35,7 +35,7 @@ describe('Age', () => {
   });
 
   test('should correctly convert age of 10 to Martian age', () => {
-    expect(testAge2.toMartian()).toBeCloseTo(0.188);
+    expect(testAge2.toMartian()).toBeCloseTo(5.319);
   });
 
   test('should correctly convert age of 1 to Jovian age', () => {
