@@ -1,0 +1,22 @@
+li {
+  text-align:center;
+  list-style:none;  
+}
+
+.darkLi {
+  color:#99d8fe;
+  background-color:#1d0e2f;
+}
+
+.lightLi {
+  color:#1d0e2f;
+  background-color:#99d8fe;
+}
+
+#outputs {
+  display:none;  
+}
+
+ul {
+  border:darkslategray solid 1px;
+}

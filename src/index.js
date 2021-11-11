@@ -11,6 +11,7 @@ $('#inputForm').on('submit', function(event) {
 });
 
 function outputAges(age) {
+  $("#outputs").show();
   $("#earthAge").text(age.earthAge.toPrecision(3) + " Earth solar years");
   $("#mercurialAge").text(age.toMercurial().toPrecision(3) + " Mercurial solar years");
   $("#venusianAge").text(age.toVenusian().toPrecision(3) + " Venusian solar years");
