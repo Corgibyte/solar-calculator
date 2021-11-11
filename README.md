@@ -18,7 +18,12 @@ This website showcases my ability to develop and deploy a website that utilizes 
 The website is visible on [GitHub Pages](https://Corgibyte.github.io/solar-calculator).
 
 ### Setup
-TODO
+1. Download and install [Git](http://git-scm.com)
+2. Use terminal to navigate to desired parent directory and use `git clone https://github.com/Corgibyte/solar-calculator`
+3. Navigate into project directory: `cd solar-calculator`
+4. Install node.js modules: `npm install`
+5. Build project: `npm run build`
+6. Open `dist/index.html` in your browser
 
 ### Known bugs: 
 None at current time
