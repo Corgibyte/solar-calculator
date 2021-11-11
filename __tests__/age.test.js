@@ -6,8 +6,10 @@ describe('Age', () => {
   let testAge2;
 
   beforeEach(() => {
-    testAge1 = new Age(1);
-    testAge2 = new Age(10);
+    const msPerYear = 1000 * 60 * 60 * 24 * 365;
+    const nowDate = new Date();
+    testAge1 = new Age(new Date(nowDate.getTime() - msPerYear));
+    testAge2 = new Age(new Date(nowDate.getTime() - 10 * msPerYear));
   });
 
   test('should create age object with given age as Earth age', () => {

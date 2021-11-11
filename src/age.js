@@ -1,6 +1,7 @@
 export class Age {
   constructor(birthday) {
     this.birthday = birthday;
+    this.earthAge = (Date.now() - birthday.getTime()) / (1000 * 60 * 60 * 24 * 365);
   }
 
   toMercurial() {
