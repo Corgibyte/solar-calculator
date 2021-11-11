@@ -12,8 +12,7 @@ export class Age {
   }
 
   toMartian() {
-    //TODO
-    return 1;
+    return this.earthAge / 1.88;
   }
 
   toJovian() {
