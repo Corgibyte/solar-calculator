@@ -18,4 +18,20 @@ export class Age {
   toJovian() {
     return this.earthAge / 11.86;
   }
+
+  getMercurialLifeExp(earthLifeExp) {
+    return 1;
+  }
+
+  getVenusianLifeExp(earthLifeExp) {
+    return 1;
+  }
+
+  getMartianLifeExp(earthLifeExp) {
+    return 1;
+  }
+
+  getJovianLifeExp(earthLifeExp) {
+    return 1;
+  }
 }
