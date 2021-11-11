@@ -9,24 +9,19 @@
 <body>
   <div class="container">
     <h1 class="jumbotron">Solar Calculator</h1>
-    <form id="inputForm">
-      <div id="inputs" class="form-row">
-        <div class="form-group col-4">
-          <input type="number" id="ageInput" class="form-control" min="0" placeholder="Age in Earth years" required>
-        </div>
-        <div class="form-group col-4">
-          <input type="number" id="lifeExpInput" class="form-control" min="0" placeholder="Life expectancy in Earth years" required>
-        </div>
-        <div class="form-group col-4">
+    <div class="row">
+      <div class="col-4" id="inputs">
+        <form id="inputForm">
+          <div class="form-group">
+            <input type="date" id="birthday" class="form-control" required>
+          </div>
           <button type="submit" class="btn-secondary">Calculate Solar Ages</button>
-        </div>
+        </form>
       </div>
-    </form>
-    <div id="outputs" class="row">
-      <div class="col-4">
+      <div class="col-8" id="outputs">
         <p id="output1"></p>
       </div>
-    </div>
+    </div>    
   </div>  
 </body>
 </html>

@@ -8,6 +8,6 @@ let currentAge = {};
 
 $('#inputForm').on('submit', function(event) {
   event.preventDefault();
-  currentAge = new Age(parseInt($('#ageInput').val()));
+  currentAge = new Age(new Date($("#birthday").val()));
   $('#output1').text(`Earth Age: ${currentAge.earthAge}. Mercurial Age: ${currentAge.toMercurial()}`);
 });
