@@ -19,19 +19,19 @@ export class Age {
     return this.earthAge / 11.86;
   }
 
-  getMercurialLifeExp(earthLifeExp) {
+  mercurialYearsLeft(earthLifeExp) {
     return 1;
   }
 
-  getVenusianLifeExp(earthLifeExp) {
+  venusianYearsLeft(earthLifeExp) {
     return 1;
   }
 
-  getMartianLifeExp(earthLifeExp) {
+  martianYearsLeft(earthLifeExp) {
     return 1;
   }
 
-  getJovianLifeExp(earthLifeExp) {
+  jovianYearsLeft(earthLifeExp) {
     return 1;
   }
 }
