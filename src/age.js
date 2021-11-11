@@ -1,6 +1,6 @@
 export class Age {
   constructor(age) {
-    //TODO
+    this.earthAge = age;
   }
 
   toMercurial() {
