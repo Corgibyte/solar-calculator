@@ -30,7 +30,8 @@ export class Age {
   }
 
   martianYearsLeft(earthLifeExp) {
-    return 1;
+    const ageToConvert = Math.abs(earthLifeExp - this.earthAge);
+    return ageToConvert / 1.88;
   }
 
   jovianYearsLeft(earthLifeExp) {
