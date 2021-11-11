@@ -27,6 +27,7 @@ ul {
 
 .titleLi {
   font-size:large;
+  font-weight:bold;
 }
 
 .outputList {
@@ -38,12 +39,12 @@ ul {
   background-color:black;
 }
 
-.btn-secondary {
+.btn {
   background-color:#91335D;
   color:#b9d6f2;
 }
 
-.btn-secondary:hover {
+.btn:hover {
   background-color:#b2708e;
   color:#b9d6f2;
 }
