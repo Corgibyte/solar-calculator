@@ -22,7 +22,7 @@ function outputAges(age) {
 }
 
 function outputLifeExp(age, estLifeExp) {
-  if (age.earthAge > estLifeExp) {
+  if (age.earthAge < estLifeExp) {
     $("#lifeExpTitle").text("Estimated time left:");
   } else {
     $("#lifeExpTitle").text("Time past estimated:");
