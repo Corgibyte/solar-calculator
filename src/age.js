@@ -21,7 +21,7 @@ export class Age {
   }
 
   earthYearsLeft(earthLifeExp) {
-    return earthLifeExp * 100;
+    return Math.abs(earthLifeExp - this.earthAge);
   }
 
   mercurialYearsLeft(earthLifeExp) {
