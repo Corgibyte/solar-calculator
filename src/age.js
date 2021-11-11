@@ -35,6 +35,7 @@ export class Age {
   }
 
   jovianYearsLeft(earthLifeExp) {
-    return 1;
+    const ageToConvert = Math.abs(earthLifeExp - this.earthAge);
+    return ageToConvert / 11.86;
   }
 }
