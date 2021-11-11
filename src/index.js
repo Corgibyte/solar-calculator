@@ -17,4 +17,5 @@ function outputAges(age) {
   $("#venusianAge").text(age.toVenusian().toPrecision(3) + " Venusian solar years");
   $("#martianAge").text(age.toMartian().toPrecision(3) + " Martian solar years");
   $("#jovianAge").text(age.toJovian().toPrecision(3) + " Jovian solar years");
+  $("#dateOutput").text(age.birthday.toDateString());
 }

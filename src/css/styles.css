@@ -1,6 +1,10 @@
 li {
   text-align:center;
-  list-style:none;  
+  list-style:none;
+}
+
+ul {
+  padding:0;
 }
 
 .darkLi {
@@ -17,6 +21,10 @@ li {
   display:none;  
 }
 
-ul {
-  border:darkslategray solid 1px;
+.titleLi {
+  font-size:large;
+}
+
+.outputList {
+  border:2px solid #4C3F79;
 }
