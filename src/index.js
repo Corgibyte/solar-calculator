@@ -4,10 +4,18 @@ import './css/styles.css';
 import $ from 'jquery';
 import { Age } from './age.js';
 
-let currentAge = {};
-
 $('#inputForm').on('submit', function(event) {
   event.preventDefault();
-  currentAge = new Age(new Date($("#birthday").val()));
-  $('#output1').text(`Earth Age: ${currentAge.earthAge}. Mercurial Age: ${currentAge.toMercurial()}`);
+  const submittedAge = new Age(new Date($("#birthday").val()));
+  $('#output1').text(`Earth Age: ${submittedAge.earthAge}. Mercurial Age: ${submittedAge.toMercurial()}`);
 });
+
+function outputAges(age) {
+
+let htmlString = `
+  <li>
+    <div class="row">
+      <div class="col-1">
+      
+  `
+}
