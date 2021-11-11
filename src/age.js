@@ -43,5 +43,25 @@ export class Age {
     const ageToConvert = Math.abs(earthLifeExp - this.earthAge);
     return ageToConvert / 11.86;
   }
+
+  earthYearsToBirthday() {
+    return -1;
+  }
+
+  mercurialYearsToBirthday() {
+    return -1;
+  }
+
+  venusianYearsToBirthday() {
+    return -1;
+  }
+
+  martianYearsToBirthday() {
+    return -1;
+  }
+
+  jovianYearsToBirthday() {
+    return -1;
+  }
 }
 
