@@ -32,3 +32,18 @@ ul {
 .outputList {
   border:2px solid #4C3F79;
 }
+
+.jumbotron {
+  color:#99d8fe;
+  background-color:black;
+}
+
+.btn-secondary {
+  background-color:#91335D;
+  color:#b9d6f2;
+}
+
+.btn-secondary:hover {
+  background-color:#b2708e;
+  color:#b9d6f2;
+}
