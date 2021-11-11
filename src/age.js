@@ -1,6 +1,6 @@
 export class Age {
-  constructor(age) {
-    this.earthAge = age;
+  constructor(birthday) {
+    this.birthday = birthday;
   }
 
   toMercurial() {
@@ -39,3 +39,4 @@ export class Age {
     return ageToConvert / 11.86;
   }
 }
+
