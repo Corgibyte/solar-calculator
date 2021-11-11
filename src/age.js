@@ -4,8 +4,7 @@ export class Age {
   }
 
   toMercurial() {
-    //TODO
-    return 1;
+    return this.earthAge / 0.24;
   }
 
   toVenusian() {
