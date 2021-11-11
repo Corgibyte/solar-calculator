@@ -45,4 +45,36 @@ describe('Age', () => {
   test('should correctly convert age of 10 to Jovian age', () => {
     expect(testAge2.toJovian()).toBeCloseTo(0.843);
   });
+
+  test('should get correct Mercurial years left if younger than life exp', () => {
+    expect(testAge1.mercurialYearsLeft(3)).toBeCloseTo(8.333);
+  });
+
+  test('should get correct Mercurial years past LE if older than LE', () => {
+    expect(testAge2.mercurialYearsLeft(7)).toBeCloseTo(12.5);
+  });
+
+  test('should get correct Venusian years left if younger than life exp', () => {
+    expect(testAge1.venusianYearsLeft(3)).toBeCloseTo(3.226);
+  });
+
+  test('should get correct Venusian years past LE if older than LE', () => {
+    expect(testAge2.venusianYearsLeft(7)).toBeCloseTo(4.839);
+  });
+
+  test('should get correct Martian years left if younger than life exp', () => {
+    expect(testAge1.martianYearsLeft(3)).toBeCloseTo(1.064);
+  });
+
+  test('should get correct Martian years past LE if older than LE', () => {
+    expect(testAge2.martianYearsLeft(7)).toBeCloseTo(1.596);
+  });
+
+  test('should get correct Jovian years left if younger than life exp', () => {
+    expect(testAge1.jovianYearsLeft(3)).toBeCloseTo(0.169);
+  });
+
+  test('should get correct Jovian years past LE if older than LE', () => {
+    expect(testAge2.jovianYearsLeft(7)).toBeCloseTo(0.253);
+  });
 });
