@@ -93,18 +93,18 @@ describe('Age', () => {
   });
 
   test('should get correct Mercurial years to next birthday', () => {
-    expect(testAge1.mercurialYearsToBirthday()).toBeCloseTo(1);
+    expect(testAge1.mercurialYearsToBirthday()).toBeCloseTo(4.167);
   });
 
   test('should get correct Venusian years to next birthday', () => {
-    expect(testAge1.venusianYearsToBirthday()).toBeCloseTo(1);
+    expect(testAge1.venusianYearsToBirthday()).toBeCloseTo(1.613);
   });
 
   test('should get correct Martian years to next birthday', () => {
-    expect(testAge1.martianYearsToBirthday()).toBeCloseTo(1);
+    expect(testAge1.martianYearsToBirthday()).toBeCloseTo(0.532);
   });
 
   test('should get correct Jovian years to next birthday', () => {
-    expect(testAge1.jovianYearsToBirthday()).toBeCloseTo(1);
+    expect(testAge1.jovianYearsToBirthday()).toBeCloseTo(0.0843);
   });
 });
