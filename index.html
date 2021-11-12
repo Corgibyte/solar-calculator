@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Solar Calculator</h1>
+    </div>
+    <div class="row">
+      <div class="col-4" id="inputs">
+        <form id="inputForm">
+          <div class="form-group">
+            <input type="date" id="birthday" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <input type="number" id="lifeExp" class="form-control" placeholder="Estimated life expectancy in Earth years" min=1 required>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn">Calculate Solar Ages</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-4 outputs">
+        <ul class="outputList">
+          <li class="titleLi lightLi">Age if born <span id="dateOutput"></span>:</li>
+          <li class="darkLi" id="earthAge"></li>
+          <li class="lightLi" id="mercurialAge"></li>
+          <li class="darkLi" id="venusianAge"></li>
+          <li class="lightLi" id="martianAge"></li>
+          <li class="darkLi" id="jovianAge"></li>
+        </ul>
+      </div>
+      <div class="col-4 outputs">
+        <ul class="outputList">
+          <li class="titleLi lightLi"><span id="lifeExpTitle"></span></li>
+          <li class="darkLi" id="earthLifeExp"></li>
+          <li class="lightLi" id="mercurialLifeExp"></li>
+          <li class="darkLi" id="venusianLifeExp"></li>
+          <li class="lightLi" id="martianLifeExp"></li>
+          <li class="darkLi" id="jovianLifeExp"></li>
+        </ul>
+      </div>
+    </div>    
+  </div>  
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
