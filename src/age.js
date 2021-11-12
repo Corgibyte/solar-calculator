@@ -68,7 +68,7 @@ export class Age {
   }
 
   venusianYearsToBirthday() {
-    return -1;
+    return this.earthYearsToBirthday() / 0.62;
   }
 
   martianYearsToBirthday() {
