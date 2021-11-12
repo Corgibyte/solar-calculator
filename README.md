@@ -15,7 +15,7 @@ A simple site that calculates ages across the solar system.
 
 This website showcases my ability to develop and deploy a website that utilizes a Node.js environment. The calculator allows a user to enter a birthday and have various solar ages calculated. 
 
-The website is visible on [GitHub Pages](https://Corgibyte.github.io/solar-calculator).
+The website is visible on [GitHub Pages](https://Corgibyte.github.io/solar-calculator/).
 
 ### Setup
 1. Download and install [Git](http://git-scm.com)
