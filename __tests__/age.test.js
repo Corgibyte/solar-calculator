@@ -87,4 +87,24 @@ describe('Age', () => {
   test('should get correct Jovian years past LE if older than LE', () => {
     expect(testAge2.jovianYearsLeft(7)).toBeCloseTo(0.253);
   });
+
+  test('should get correct Earth years to next birthday', () => {
+    expect(testAge1.earthYearsToBirthday()).toBeCloseTo(1);
+  });
+
+  test('should get correct Mercurial years to next birthday', () => {
+    expect(testAge1.mercurialYearsToBirthday()).toBeCloseTo(1);
+  });
+
+  test('should get correct Venusian years to next birthday', () => {
+    expect(testAge1.venusianYearsToBirthday()).toBeCloseTo(1);
+  });
+
+  test('should get correct Martian years to next birthday', () => {
+    expect(testAge1.martianYearsToBirthday()).toBeCloseTo(1);
+  });
+
+  test('should get correct Jovian years to next birthday', () => {
+    expect(testAge1.jovianYearsToBirthday()).toBeCloseTo(1);
+  });
 });
