@@ -45,7 +45,22 @@ export class Age {
   }
 
   earthYearsToBirthday() {
-    return -1;
+    const nowDate = new Date();
+    let nextYear;
+    if (this.birthday.getMonth() < nowDate.getMonth()) {
+      nextYear = nowDate.getFullYear() + 1;
+    } else if (this.birthday.getMonth() === nowDate.getMonth()) {
+      if (this.birthday.getDate() <= nowDate.getDate()) {
+        nextYear = nowDate.getFullYear() + 1;
+      } else {
+        nextYear = nowDate.getFullYear();
+      }
+    } else {
+      nextYear = nowDate.getFullYear();
+    }
+    const nextBirthday = new Date(nextYear, this.birthday.getMonth(), this.birthday.getDate());
+    return (nextBirthday.getTime() - Date.now()) / (1000 * 60 * 60 * 24 * 365);
+
   }
 
   mercurialYearsToBirthday() {
